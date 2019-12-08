@@ -1,5 +1,9 @@
 import React from 'react';
-import Square from './components/square'
+import Board from './components/board';
+import Next from './components/next';
+import Score from './components/score';
+import Controls from './components/controls'
+import Message from './components/message'
 import './App.css';
 
 function App() {
@@ -8,7 +12,12 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Flatiron Tetris</h1>
       </header>
-      <Square color="7" />
+
+      <Next />
+      <Board />
+      <Score />
+      <Controls />
+      <Message />
     </div>
   );
 }
